@@ -6,7 +6,7 @@ MoviesApp::Application.routes.draw do
 
 # WARMUP CHALLENGE:
 #
-# Define the movies' index action to be the home page.
+# Define a route to replace the home page with the list of movies.
 #
 # In other words:
 #
