@@ -18,19 +18,21 @@ puts Movie.count
 # m.category = 'Science Fiction'
 # m.save
 
+puts Movie.count
+
 # Movie.destroy_all
 
-# m = Movie.new
-# m.title = 'Apollo 13'
-# m.year = 1995
-# m.category = 'Documentary'
-# m.save
+m = Movie.new
+m.title = 'Apollo 13'
+m.year = 1995
+m.category = 'Documentary'
+m.save
 
-# m = Movie.new
-# m.title = 'Raiders of the Lost Ark'
-# m.year = 1981
-# m.category = 'Science Fiction'
-# m.save
+m = Movie.new
+m.title = 'Raiders of the Lost Ark'
+m.year = 1981
+m.category = 'Science Fiction'
+m.save
 
 
 # Movie.create title: 'Fantastic Mr. Fox', year: 2005, category: 'Comedy'
