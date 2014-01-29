@@ -1,20 +1,24 @@
-<style>
-  .row { border-bottom: solid 1px #CCC; padding-bottom: 12px; margin-bottom: 12px;}
-</style>
-
 <div class="page-header">
-  <a href="/movies/new" class="pull-right btn btn-success btn-large">
+
+  <%= link_to "Add a New Movie", "/movies/new",
+              :class => "pull-right btn btn-success btn-large" %>
+
+<!--   <a href="/movies/new" class="pull-right btn btn-success btn-large">
     Add a New Movie
-  </a>
+  </a> -->
   <h1>Movies</h1>
 </div>
 
 <div class="row">
   <div class="col-md-3">
-    <img class="col-md-10" src="http://ia.media-imdb.com/images/M/MV5BMTM2Njg2NjU5NF5BMl5BanBnXkFtZTYwODI5MDc4._V1_SY226_SX144_.jpg">
-  </div>
+    <%= image_tag "http://ia.media-imdb.com/images/M/MV5BMTM2Njg2NjU5NF5BMl5BanBnXkFtZTYwODI5MDc4._V1_SY226_SX144_.jpg", :class => "col-md-10" %>
+<!--      <img class="col-md-10" src="http://ia.media-imdb.com/images/M/MV5BMTM2Njg2NjU5NF5BMl5BanBnXkFtZTYwODI5MDc4._V1_SY226_SX144_.jpg">
+ -->  </div>
   <div class="col-md-9">
-    <h2><a href="/movies/1">Apollo 13</a></h2>
+    <h2>
+      <%= link_to "Apollo 13", "/movies/1" %>
+      <!-- <a href="/movies/1">Apollo 13</a> -->
+    </h2>
     <p class="lead">Three astronauts must devise a strategy to return to Earth safely after their spacecraft undergoes massive internal damage.</p>
     <p>Directed by Ron Howard</p>
     <p>Starring Tom Hanks, Kevin Bacon</p>

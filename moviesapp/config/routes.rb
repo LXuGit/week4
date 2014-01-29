@@ -1,8 +1,12 @@
 MoviesApp::Application.routes.draw do
 
-  get("/movies", { :controller => 'movies', :action => 'index' })
-  get("/movies/1", { :controller => 'movies', :action => 'show' })
+  # get "/movies", :controller => 'movies', :action => 'index'
+  # get "/movies", controller: 'movies', action: 'index'
+  get "/movies" => 'movies#index'
+  get "/movies/1" => 'movies#show'
 
+  # get("/", { :controller => 'movies', :action => 'index'})
+  root "movies#index"
 
 # WARMUP CHALLENGE:
 #
